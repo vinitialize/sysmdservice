@@ -37,7 +37,6 @@ WantedBy=multi-user.target
 ```bash
 #!/bin/bash
 
-# Run forever in the background
 while true; do
   # Log a message to the log file every 10 seconds
   echo "$(date) - DUMMY APPLICATION IS RUNNING" >> /var/log/dummy.service.log
