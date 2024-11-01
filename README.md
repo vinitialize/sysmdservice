@@ -1,4 +1,4 @@
-**Dummy Service Project**
+**Dummy Systemd Service**
 ==========================
 
 **Overview**
