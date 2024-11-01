@@ -34,6 +34,17 @@ WantedBy=multi-user.target
 ```
 **Scripts**
 ---------
+```bash
+#!/bin/bash
+
+# Run forever in the background
+while true; do
+  # Log a message to the log file every 10 seconds
+  echo "$(date) - DUMMY APPLICATION IS RUNNING" >> /var/log/dummy.service.log
+  sleep 10
+done
+
+```
 
 * `dummy.sh`: This script writes log messages to the log file every 10 seconds. You can customize this script to suit your needs.
 
@@ -53,3 +64,7 @@ To use this project, simply clone it and run `systemctl enable dummy` followed b
 ---------
 
 This project is licensed under the MIT License. See the [LICENSE file](LICENSE) for more information.
+
+**Reference**
+-----------
+[Roadmap.sh](https://roadmap.sh/projects/dummy-systemd-service)
